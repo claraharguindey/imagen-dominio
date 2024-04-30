@@ -119,7 +119,6 @@ function updateContent() {
   const image = images[currentContentIndex];
   const imageElement = document.getElementById("image");
   const textElement = document.getElementById("text");
-  console.log(currentContentIndex);
   if (image !== "") {
     imageElement.style.display = "block";
     imageElement.src = image;
