@@ -19,3 +19,12 @@ function toggleAudio() {
 
 setVolume();
 volumeSlider.addEventListener("input", setVolume);
+
+function toggleAccordion() {
+    var accordionContent = document.getElementById('accordionContent');
+    if (accordionContent.style.display === 'block') {
+        accordionContent.style.display = 'none';
+    } else {
+        accordionContent.style.display = 'block';
+    }
+}

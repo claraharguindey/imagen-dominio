@@ -126,3 +126,33 @@ footer nav ul li {
     border-radius: 50%; /* Forma circular del thumb en Firefox */
     cursor: pointer;
 }
+
+.accordion-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.accordion-header {
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.accordion-content {
+    display: none;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+
+}
+
+@media (max-width: 768px) {
+    .accordion-container {
+        left: 10px;
+    }
+}
