@@ -18,19 +18,20 @@
             <img id="image" src="" alt="Imagen">
             <span id="text">Episodio 3. Imagen dominio.</span>
         </div>
-        <span id="note">(Registro de tu mirada)</span>
-        <div id="audio-container">
-            <audio id="audio" autoplay loop>
-                <source src="audio.mp3" type="audio/mpeg">
-                Tu navegador no soporta el elemento de audio.
-            </audio>
-            <button id="play-button">
-                <span id="play-icon">&#x25B6;</span>
-                <span id="pause-icon" style="display: none;">&#x23F8;</span>
-            </button>
-            <input type="range" min="0" max="100" value="50" id="volume-slider"
-                class="volume-slider">
+        <div id="note">(Registro de tu mirada)
+            <div id="audio-container">
+                <audio id="audio" autoplay loop>
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <button id="play-button">
+                    <span id="play-icon">&#x25B6;</span>
+                    <span id="pause-icon" style="display: none;">&#x23F8;</span>
+                </button>
+                <input type="range" min="0" max="100" value="50" id="volume-slider" class="volume-slider">
+            </div>
         </div>
+
     </main>
     <script src="sketch.js"></script>
     <script src="script.js"></script>

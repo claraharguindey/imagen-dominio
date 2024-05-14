@@ -32,7 +32,7 @@ const images = [
   "./../assets/images/dominio/image9.png",
   "./../assets/images/dominio/image3.jpeg",
   "./../assets/images/dominio/image2.jpeg",
-  "./../assets/images/dominio/image5.webp"
+  "./../assets/images/dominio/image5.webp",
 ];
 
 let currentIndex = 0;
@@ -55,3 +55,33 @@ function displayNextPhrase() {
 
 displayNextPhrase();
 setInterval(displayNextPhrase, 5000);
+
+let audio = document.getElementById("audio");
+let playIcon = document.getElementById("play-icon");
+let volumeSlider = document.getElementById("volume-slider");
+let isPlaying = false;
+audio.onplaying = function () {
+  isPlaying = true;
+};
+audio.onpause = function () {
+  isPlaying = false;
+};
+
+function setVolume() {
+  audio.volume = volumeSlider.value / 100;
+}
+
+function toggleAudio() {
+  if (audio.paused && !isPlaying) {
+    audio.play();
+    playIcon.style.opacity = "1";
+  } else if (!audio.paused && isPlaying) {
+    audio.pause();
+    playIcon.style.opacity = "0.5";
+  }
+}
+
+setVolume();
+
+playIcon.addEventListener("click", toggleAudio);
+volumeSlider.addEventListener("input", setVolume);

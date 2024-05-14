@@ -134,6 +134,7 @@ function setPosition() {
   currentPos.x = mouseX;
   currentPos.y = mouseY;
 }
+
 let audio = document.getElementById("audio");
 let playIcon = document.getElementById("play-icon");
 let volumeSlider = document.getElementById("volume-slider");
