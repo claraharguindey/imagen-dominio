@@ -35,3 +35,11 @@ a {
 a:hover {
   font-style: italic;
 }
+
+#audio-container {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
