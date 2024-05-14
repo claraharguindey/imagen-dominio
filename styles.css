@@ -5,7 +5,7 @@
 
 body {
     background: black;
-    color: white;
+    color: #ddd;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -15,7 +15,7 @@ body {
 }
 
 a {
-    color: white;
+    color: #ddd;
 }
 h1 {
     text-transform: uppercase;
@@ -39,26 +39,11 @@ li:hover {
     cursor: pointer;
 }
 
-
-header {
-    text-align: left;
-    margin-left: 20px;
-}
-
 main {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-footer {
-    display: flex;
-    justify-content: flex-start; 
-    align-items: flex-start;
-    margin-top: 20px;
-    width: 100%;
-    padding-left: 20px;
 }
 
 nav ul {
@@ -92,4 +77,52 @@ footer nav ul li {
         align-items: flex-start; 
         padding-left: 10px;
     }
+}
+
+#audio-container {
+    display: flex;
+    gap:8px;
+}
+
+#audio {
+    display: none;
+}
+
+#play-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ddd;
+}
+
+#play-icon {
+    font-size: 16px;
+}
+
+.volume-slider {
+    width: 50px;
+    height: 3px; /* Altura del control deslizante */
+    margin-top: 10px;
+    -webkit-appearance: none; /* Ocultar la apariencia predeterminada */
+    appearance: none;
+    background: #ddd; /* Color de fondo del control deslizante */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Ocultar el estilo predeterminado del thumb en WebKit */
+    appearance: none;
+    width: 8px; /* Ancho del thumb */
+    height: 8px; /* Altura del thumb */
+    background: #ddd; /* Color del thumb */
+    border-radius: 50%; /* Forma circular del thumb */
+    cursor: pointer;
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 8px; /* Ancho del thumb en Firefox */
+    height: 8px; /* Altura del thumb en Firefox */
+    background: #ddd; /* Color del thumb en Firefox */
+    border-radius: 50%; /* Forma circular del thumb en Firefox */
+    cursor: pointer;
 }

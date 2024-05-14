@@ -25,7 +25,7 @@ const phrases = [
   "Al dotar de cuerpo y materialidad a la imagen ausente,",
   "la ilusión de realidad y mímesis",
   "agota la imaginación de lo posible, ofreciendo una visión probable.",
-  `Episodio 3. <a href="/03-la-virtualidad-de-la-ruina/">La mirada concreta (imagen dominio).</a>`,
+  `Episodio 3. <a href="/03-imagen-dominio/">La mirada concreta (imagen dominio).</a>`,
 ];
 
 const images = [
@@ -134,3 +134,32 @@ function setPosition() {
   currentPos.x = mouseX;
   currentPos.y = mouseY;
 }
+let audio = document.getElementById("audio");
+let playIcon = document.getElementById("play-icon");
+let volumeSlider = document.getElementById("volume-slider");
+let isPlaying = false;
+audio.onplaying = function () {
+  isPlaying = true;
+};
+audio.onpause = function () {
+  isPlaying = false;
+};
+
+function setVolume() {
+  audio.volume = volumeSlider.value / 100;
+}
+
+function toggleAudio() {
+  if (audio.paused && !isPlaying) {
+    audio.play();
+    playIcon.style.opacity = "1";
+  } else if (!audio.paused && isPlaying) {
+    audio.pause();
+    playIcon.style.opacity = "0.5";
+  }
+}
+
+setVolume();
+
+playIcon.addEventListener("click", toggleAudio);
+volumeSlider.addEventListener("input", setVolume);
