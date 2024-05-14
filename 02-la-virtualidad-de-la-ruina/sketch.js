@@ -25,7 +25,7 @@ const phrases = [
   "Al dotar de cuerpo y materialidad a la imagen ausente,",
   "la ilusión de realidad y mímesis",
   "agota la imaginación de lo posible, ofreciendo una visión probable.",
-  `Episodio 3. <a href="/03-imagen-dominio/">La mirada concreta (imagen dominio).</a>`,
+  `Episodio 3. <a href="03-imagen-dominio/">La mirada concreta (imagen dominio).</a>`,
 ];
 
 const images = [

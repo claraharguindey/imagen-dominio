@@ -18,7 +18,7 @@ const phrases = [
   "ha sido una de las lógicas vertebradoras de la Historia del Arte occidental hasta el siglo XX",
   "Es entonces cuando la modernidad comienza a reclamar la disolución de los privilegios que el museo otorga:",
   "la promesa de la eternidad material.",
-  `<a href="/02-la-virtualidad-de-la-ruina/">Episodio 2.</a>`,
+  `<a href="02-la-virtualidad-de-la-ruina/">Episodio 2.</a>`,
 ];
 
 const images = [
