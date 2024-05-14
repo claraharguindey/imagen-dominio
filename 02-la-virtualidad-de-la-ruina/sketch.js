@@ -25,7 +25,7 @@ const phrases = [
   "Al dotar de cuerpo y materialidad a la imagen ausente,",
   "la ilusión de realidad y mímesis",
   "agota la imaginación de lo posible, ofreciendo una visión probable.",
-  `Episodio 3. <a href="./../03-imagen-dominio/">La imagen dominio.</a>`,
+  ` <a href="./../03-imagen-dominio/">Episodio 3.</a>`,
 ];
 
 const images = [
@@ -165,12 +165,11 @@ setVolume();
 playIcon.addEventListener("click", toggleAudio);
 volumeSlider.addEventListener("input", setVolume);
 
-
 function toggleAccordion() {
-  var accordionContent = document.getElementById('accordionContent');
-  if (accordionContent.style.display === 'block') {
-      accordionContent.style.display = 'none';
+  var accordionContent = document.getElementById("accordionContent");
+  if (accordionContent.style.display === "block") {
+    accordionContent.style.display = "none";
   } else {
-      accordionContent.style.display = 'block';
+    accordionContent.style.display = "block";
   }
 }
